@@ -1,0 +1,219 @@
+/*
+Theme Name: Storefront Child
+Theme URI: https://woocommerce.com/storefront/
+Template: storefront
+Author: Automattic
+Author URI: https://woocommerce.com/
+Description: Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout &amp; color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Tags: e-commerce,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-header,custom-menu,featured-images,full-width-template,threaded-comments,accessibility-ready,rtl-language-support,footer-widgets,sticky-post,theme-options,editor-style
+Version: 4.1.3.1667898145
+Updated: 2022-11-08 09:02:25
+
+*/
+
+body.woocommerce #primary,
+body.woocommerce-checkout #primary {
+	width: 100%;
+}
+
+p, h2, h3, h4, h5, ul {
+    color: #004C9C !important;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+                                                
+}
+
+h6 {
+    color: #004C9C !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    
+                                                
+}
+
+#colophon > div > div.pages > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #004C9C !important;
+}
+#colophon > div > div.pages > a:hover {
+    opacity: 0.7;
+  }
+
+.site-footer a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Apple Chancery', sans-serif;
+    font-size: 100px;
+    color: #004C9C;
+                                                
+}
+
+ul.menu li a {
+    color: #004C9C;
+   
+}
+
+#menu-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+#page {
+    background-color: #FDF7C6;
+}
+
+.custom-logo {
+    object-fit: scale-down;
+    height: 75px;
+}
+
+#masthead {
+    background-color: #FDF7C6;
+    
+}
+
+#masthead > div.col-full > div.site-branding > a > img{
+    max-width: 125px !important;
+}
+
+#heading-frontpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.woocommerce-products-header__title.page-title {
+    display: none;
+}
+
+.storefront-sorting {
+    display: none;
+}
+
+
+
+.product {
+    background-color: #ffffff;
+
+}
+
+
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+.divider_line {
+    height: 2px;
+    width: 80%;
+    background-color: #004C9C;
+
+}
+
+.button {
+    margin-bottom: 1.2360000000000042em !important;
+}
+
+.site-footer{
+    background-color: #FDF7C6;
+    
+}
+
+.col-full {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact {
+    width: 33vw;
+    height: 200px;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+.socials {
+    width: 33vw;
+    height: 200px;
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+}
+
+.social_icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.pages {
+    width: 33vw;
+    height: 200px;
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+}
+
+.bi {
+    color: #004C9C !important;
+    padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bi:hover {
+    opacity: 0.7;
+  }
+
+  a:focus,
+  .focus a {
+      outline: none !important;
+  }
+
+  .entry-title {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 50px;
+  }
+
+  .col2-set {
+    margin: 0px !important;
+  }
+
+  .col-1 {
+    width: auto;
+  }
+
+  .col-2 {
+    width: auto;
+  }
+
+  .input-text {
+    background-color: #ffffff !important;
+  } 
+
+  .widget-area {
+    display: none;
+  }
+
+  .cart_totals, .cart-collaterals {
+    width: 100% !important;
+    float: center !important;
+  }
