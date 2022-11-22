@@ -20,12 +20,23 @@
 
 <body <?php body_class(); ?>>
 
+
+
+<div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Kiosk</span>
+            <span class="logo">en</span>
+        </h1>
+    </div>
+
 <?php wp_body_open(); ?>
 
 <?php do_action( 'storefront_before_site' ); ?>
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'storefront_before_header' ); ?>
+
+
 
 	<header id="masthead" class="site-header" role="banner" >
         <?php storefront_header_cart() ?>
@@ -77,6 +88,8 @@
 
     
 	</header><!-- #masthead -->
+
+    
    
 	<?php
 	/**
