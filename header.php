@@ -50,7 +50,7 @@
         <div id="heading-frontpage">
             <h1>Kiosken</h1>
       </div>
-      <div id="menu">
+      <div id="main-menu">
         <?php
         $args = array(
         'menu' => 'Main Menu',
@@ -58,6 +58,22 @@
         'container' => 'div',
             );
             wp_nav_menu( $args ); ?></div>
+
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+  <div id="menu">
+        <?php
+        $args = array(
+        'menu' => 'Main Menu',
+        'sort_column' => 'menu_order',
+        'container' => 'div',
+            );
+            wp_nav_menu( $args ); ?></div>
+  </nav>
+</label>
+
+<div class="overlay"></div>
 
     
 	</header><!-- #masthead -->

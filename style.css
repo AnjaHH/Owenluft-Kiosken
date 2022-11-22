@@ -14,7 +14,10 @@ Updated: 2022-11-08 09:02:25
 body.woocommerce #primary,
 body.woocommerce-checkout #primary {
 	width: 100%;
+    
 }
+
+
 
 p, h2, h3, h4, h5, ul {
     color: #004C9C !important;
@@ -46,10 +49,15 @@ a {
     text-decoration: none;
 }
 
+.site-footer {
+    padding-bottom: 0px;
+}
+
 h1 {
     font-family: 'Apple Chancery', sans-serif;
     font-size: 100px;
     color: #004C9C;
+    margin-bottom: 20px;
                                                 
 }
 
@@ -61,7 +69,6 @@ ul.menu li a {
 #menu-menu {
     display: flex;
     flex-direction: row;
-    gap: 50px;
     justify-content: center;
 }
 
@@ -90,7 +97,7 @@ ul.menu li a {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+   
 }
 
 .woocommerce-products-header__title.page-title {
@@ -216,4 +223,168 @@ ul.menu li a {
   .cart_totals, .cart-collaterals {
     width: 100% !important;
     float: center !important;
+  }
+
+  .site-header {
+    border-bottom-color: #FDF7C6 !important;
+}
+
+.site-header-cart {
+    padding-right: 30px;
+}
+
+.menu-item {
+    
+    border-left: #004C9C 1px solid;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+#menu-item-33{
+    border-right: #004C9C 1px solid;
+}
+li {
+    list-style-type: none;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#hamburger-input{
+    display: none;
+  }
+  
+  #hamburger-menu {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      width: 35px;
+      height: 25px;
+      display: none;
+      border: none;
+      cursor: pointer;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Cabin', Sans-serif;
+      background: linear-gradient(
+        to bottom, 
+        #004C9C, #004C9C 25%, 
+        #FDF7C6 25%, #FDF7C6 35%, 
+        #004C9C 35%, #004C9C 60%, 
+        #FDF7C6 60%, #FDF7C6 75%, 
+        #004C9C 75%, #004C9C 100%
+      ) ;
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      right: 0px;
+      width: 250px;
+      height: 100%;
+      background-color: #004C9C;
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
+
+  #menu-menu-1 {
+    margin: 0%;
+  }
+  
+
+  
+  #hamburger-menu h3 {
+    color: #FDF7C6;
+    font-size: 2.2rem;
+  }
+  
+  #hamburger-menu ul {
+    padding-left: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+  #hamburger-menu a {
+    color: #FDF7C6;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #hamburger-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+     
+  }
+  #hamburger-input:checked ~ .overlay{
+     visibility: visible;
+    opacity: 0.4;
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h6, a {
+        font-size: 12px;
+    }
+
+
+    #masthead{
+        margin-bottom: 0px;
+    }
+
+    .custom-logo {
+        width: 50px;
+        height: 50px;
+    }
+    #logo > a > img {
+        max-width: 153px;
+    }
+
+    .col-full {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact, .socials, .pages {
+        width: 80vw;
+        height: 110px;
+    }
+
+
   }
