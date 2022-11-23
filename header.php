@@ -22,13 +22,13 @@
 
 
 
-<div class="intro">
+<!-- <div class="intro">
         <h1 class="logo-header">
             <span class="logo">Kiosk</span>
             <span class="logo">en</span>
         </h1>
     </div>
-
+ -->
 <?php wp_body_open(); ?>
 
 <?php do_action( 'storefront_before_site' ); ?>

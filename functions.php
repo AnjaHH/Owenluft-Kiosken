@@ -86,4 +86,16 @@ function bbloomer_remove_storefront_search() {
 
 
 
+//  /**
+//   * Remove product page tabs
+//   */
+//  add_filter( 'woocommerce_product_tabs', 'my_remove_all_product_tabs', 98 );
+  
+//  function my_remove_all_product_tabs( $tabs ) {
+//    unset( $tabs['description'] );        // Remove the description tab
+//    unset( $tabs['reviews'] );       // Remove the reviews tab
+//    unset( $tabs['additional_information'] );    // Remove the additional information tab
+//    return $tabs;
+//  }
+
     

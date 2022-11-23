@@ -62,11 +62,18 @@ body.woocommerce-checkout #primary {
 
 
 
-p, h2, h3, h4, h5, ul {
+ h2, h3, h4, h5, ul {
     color: #004C9C !important;
     font-family: 'Arial Rounded MT Bold', sans-serif;
                                                 
 }
+
+p {
+    color: #004C9C !important;
+    font-family: 'Arial helvetica', sans-serif;
+                                                
+}
+
 
 h6 {
     color: #004C9C !important;
@@ -389,7 +396,66 @@ li {
     opacity: 0.4;
   }
 
+  #site-header-cart > li.current-menu-item > a {
+    color: #004C9C !important;
+  }
 
+  #site-header-cart > li:nth-child(2) > div {
+    background-color: #Ffffff !important;
+  }
+
+  .main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, .site-header ul.menu li.current-menu-item > a {
+    color: #004C9C !important;
+    opacity: 0.5 ;
+}
+
+
+/* style af single product page */
+
+.single-product .product {
+    padding: 40px;
+}
+.single-product .entry-title {
+    font-size: 30px;
+    
+}
+
+.woocommerce-Price-amount {
+    font-size: 18px;
+}
+
+.button.alt, .widget-area .widget a.button.alt {
+    background-color: #004c9c;
+    border-color: #004c9c;
+    color: #ffffff;
+    width: 70%;
+}
+
+.single-product div.product table.variations select {
+    max-width: 70%;
+    vertical-align: middle;
+    padding: 10px;
+    color: #004C9C;
+    border-color: #004C9C;
+}
+
+#product-52 > div.summary.entry-summary > div.product_meta > span.posted_in{
+    display: none;
+}
+
+.edit-link {
+    display: none;
+}
+
+.single-product .product {
+    background-color: #FDF7C6;
+}
+
+
+
+.woocommerce div.product form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce div.product form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label, .woocommerce.archive form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce.archive form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label, .woocommerce.single-product form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce.single-product form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label {
+    width: 28px;
+}
   
   
   @media screen and (max-width: 750px) {

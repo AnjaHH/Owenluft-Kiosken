@@ -32,7 +32,7 @@
                 <?php
                     echo ' <a target = "blank" href="https://www.facebook.com/owenluft/"<i class="bi bi-facebook"></i></a>';
                     echo ' <a target = "blank" href="https://www.instagram.com/owenluftkaensert/?hl=da"<i class="bi bi-instagram"></i></a>';
-                    echo ' <a target = "blank" href=""<i class="bi bi-spotify"></i></a>';
+                    echo ' <a target = "blank" href="https://open.spotify.com/playlist/2OMlleGyMN3eRtxBeE3lU5?si=2cc0a80458414ad2"<i class="bi bi-spotify"></i></a>';
                 ?>
                
 
