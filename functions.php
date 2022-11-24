@@ -21,7 +21,7 @@ function kiosken_register_stylesheet() {
     wp_enqueue_style("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css");
     wp_enqueue_style("bootstrap-icons", "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
     wp_enqueue_script("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js", array(), null, true);
-    wp_enqueue_script( 'example-script', get_template_directory_uri() . '/js/app.js');
+   // wp_enqueue_script( "'example-script", get_stylesheet_directory_uri() . "/js/app.js");
  }
 add_action("wp_enqueue_scripts", "kiosken_register_stylesheet"); 
 
@@ -30,7 +30,15 @@ function bake_my_wp_remove_storefront_sidebar() {
 		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 	}
 }
-	
+
+add_action( 'wp_enqueue_scripts', 'load_my_site_scripts' );
+function load_my_site_scripts(){
+    // wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array (), NULL, true);
+    // wp_enqueue_script( 'input', get_template_directory_uri() . '/js/vendor/what-input.js', array ('jquery'), NULL, true);
+    // wp_enqueue_script( 'foundation-core', get_template_directory_uri() . '/js/vendor/foundation.js', array ('jquery'), NULL, true);
+    wp_enqueue_script( 'ext', get_stylesheet_directory_uri() . '/js/app.js', array ('jquery'), NULL, true);
+}
+
 add_action( 'get_header', 'bake_my_wp_remove_storefront_sidebar' );
 
 function kiosken_custom_logo_setup() {
@@ -98,4 +106,3 @@ function bbloomer_remove_storefront_search() {
 //    return $tabs;
 //  }
 
-    

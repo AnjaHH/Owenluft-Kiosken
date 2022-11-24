@@ -14,21 +14,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="<?php bloginfo('get_template_directory()'); ?>/js/app.js"></script>
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-
-
-<!-- <div class="intro">
-        <h1 class="logo-header">
-            <span class="logo">Kiosk</span>
-            <span class="logo">en</span>
-        </h1>
-    </div>
- -->
+ 
 <?php wp_body_open(); ?>
 
 <?php do_action( 'storefront_before_site' ); ?>
