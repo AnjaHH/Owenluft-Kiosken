@@ -33,9 +33,6 @@ function bake_my_wp_remove_storefront_sidebar() {
 
 add_action( 'wp_enqueue_scripts', 'load_my_site_scripts' );
 function load_my_site_scripts(){
-    // wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array (), NULL, true);
-    // wp_enqueue_script( 'input', get_template_directory_uri() . '/js/vendor/what-input.js', array ('jquery'), NULL, true);
-    // wp_enqueue_script( 'foundation-core', get_template_directory_uri() . '/js/vendor/foundation.js', array ('jquery'), NULL, true);
     wp_enqueue_script( 'ext', get_stylesheet_directory_uri() . '/js/app.js', array ('jquery'), NULL, true);
 }
 
@@ -65,6 +62,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+
 function productcardline(){
     ?>
     <div class="divider">
@@ -73,6 +71,26 @@ function productcardline(){
     <?php
 }
 add_action("woocommerce_before_shop_loop_item_title","productcardline");
+
+function divider_line(){
+    ?>
+    <div class="divider1">
+        <div class="divider_line1"></div>
+    </div>
+    <?php
+}
+add_action("woocommerce_before_add_to_cart_form","divider_line");
+
+function divider_line1(){
+    ?>
+    <div class="divider2">
+        <div class="divider_line2"></div>
+    </div>
+    <?php
+}
+add_action("woocommerce_before_add_to_cart_button","divider_line1");
+
+
 
 
 
@@ -94,15 +112,4 @@ function bbloomer_remove_storefront_search() {
 
 
 
-//  /**
-//   * Remove product page tabs
-//   */
-//  add_filter( 'woocommerce_product_tabs', 'my_remove_all_product_tabs', 98 );
-  
-//  function my_remove_all_product_tabs( $tabs ) {
-//    unset( $tabs['description'] );        // Remove the description tab
-//    unset( $tabs['reviews'] );       // Remove the reviews tab
-//    unset( $tabs['additional_information'] );    // Remove the additional information tab
-//    return $tabs;
-//  }
 

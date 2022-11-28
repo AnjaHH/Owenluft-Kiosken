@@ -50,6 +50,7 @@ do_action( 'woocommerce_before_main_content' );
 <?php if (is_shop()):?>
     <div class="intro">
 <h1 class="logo-header">
+
     <span class="logo">Kiosk</span>
     <span class="logo">en</span>
 </h1>
