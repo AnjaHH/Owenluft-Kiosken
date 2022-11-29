@@ -481,6 +481,7 @@ li {
 
 .site-main ul.products.columns-3 li.product {
     box-shadow: 2px 2px 6px  #ded69e;
+    background-color: #Ffffff;
 }
 .site-main ul.products.columns-3 li.product:hover {
     box-shadow: 5px 5px 6px  #ded69e;
@@ -528,6 +529,28 @@ li {
     background-color: #FDF7C6;
 }
 
+/* style af til top knap */
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #FDF7C6;
+    color: #004C9C; 
+    cursor: pointer; 
+   
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+
+  #myBtn:hover {
+    opacity: 0.7; 
+  }
+
 
 
 
@@ -567,7 +590,8 @@ li {
     background-color: #FDF7C6;
     padding: 20px;
     margin-left: 0px;
-    
+    margin-bottom: 0px;
+   
 
   }
 
@@ -599,6 +623,22 @@ li {
     margin-top: 20px;
 }
 
+.site-footer a:not(.button):not(.components-button) {
+    color: #004C9C;
+}
+.site-footer a:not(.button):not(.components-button):hover {
+    opacity: 0.7;
+}
+
+#wc-stripe-cc-form > div.stripe-source-errors > ul > li {
+    color:#ffffff;
+}
+
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+   
+    color: #fff !important;
+  
+}
 
 
   
@@ -683,7 +723,7 @@ li {
     .col-full {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .contact, .socials, .pages {
@@ -693,7 +733,7 @@ li {
 
     .site-content {
         
-        margin-bottom: -70px;
+        margin-bottom: -130px;
     }
     
     .button.alt, .widget-area .widget a.button.alt {
@@ -725,6 +765,13 @@ li {
     #main > p {
         margin-top:20px;
     }
+
+    #myBtn {
+        width: 100%;
+        bottom: 60px; 
+        right: 0px;
+        
+      }
 
   }
 

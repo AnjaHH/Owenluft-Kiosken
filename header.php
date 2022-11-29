@@ -54,7 +54,9 @@
             </div>
         </div>
         <div id="heading-frontpage">
-            <h1>Kiosken</h1>
+            <?php
+        echo ' <a href="https://anjahein.dk/Kiosken/product-category/alle_produkter/"><h1>Æ kiosk</h1></a>';
+            ?>
       </div>
       <div id="main-menu">
         <?php

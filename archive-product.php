@@ -51,14 +51,13 @@ do_action( 'woocommerce_before_main_content' );
     <div class="intro">
 <h1 class="logo-header">
 
-    <span class="logo">Kiosk</span>
-    <span class="logo">en</span>
+    <span class="logo">Æ</span>
+    <span class="logo">kiosk</span>
 </h1>
 </div>
 <?php else: ?>
 <div class="custom-product-category-class"></div>
 <?php endif;?>
-
 
 
 <?php
@@ -86,6 +85,8 @@ if ( woocommerce_product_loop() ) {
 
 			wc_get_template_part( 'content', 'product' );
 		}
+
+        
 	}
 
 	woocommerce_product_loop_end();
@@ -118,5 +119,7 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action( 'woocommerce_sidebar' );
+
+
 
 get_footer( 'shop' );

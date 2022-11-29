@@ -91,7 +91,12 @@ function divider_line1(){
 add_action("woocommerce_before_add_to_cart_button","divider_line1");
 
 
-
+function to_top_button(){
+    ?>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    <?php
+}
+add_action("woocommerce_after_main_content","to_top_button");
 
 
 /*remove storefront theme hooks*/

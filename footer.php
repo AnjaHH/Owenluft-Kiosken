@@ -23,16 +23,19 @@
 		<div class="col-full">
             <div class="contact">
                 <h4>Kontakt</h4>
-                <h6>kaensert@outlook.dk</h6>
+                <?php
+                    echo ' <a target="_blank" rel="noopener noreferrer" href=mailto:<kaensert@outlook.dk?subject="HTML link">kaensert@outlook.dk</a>';
+                    ?>
+                
                 <h6>CVR: 33923716</h6>
             </div>
             <div class="socials">
                 <h4>Sociale medier</h4>
                 <div class="socials_icon">
                 <?php
-                    echo ' <a target = "blank" href="https://www.facebook.com/owenluft/"<i class="bi bi-facebook"></i></a>';
-                    echo ' <a target = "blank" href="https://www.instagram.com/owenluftkaensert/?hl=da"<i class="bi bi-instagram"></i></a>';
-                    echo ' <a target = "blank" href="https://open.spotify.com/playlist/2OMlleGyMN3eRtxBeE3lU5?si=2cc0a80458414ad2"<i class="bi bi-spotify"></i></a>';
+                    echo ' <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/owenluft/"<i class="bi bi-facebook"></i></a>';
+                    echo ' <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/owenluftkaensert/?hl=da"<i class="bi bi-instagram"></i></a>';
+                    echo ' <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/2OMlleGyMN3eRtxBeE3lU5?si=2cc0a80458414ad2"<i class="bi bi-spotify"></i></a>';
                 ?>
                
 
