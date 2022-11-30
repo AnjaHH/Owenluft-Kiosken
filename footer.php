@@ -24,7 +24,7 @@
             <div class="contact">
                 <h4>Kontakt</h4>
                 <?php
-                    echo ' <a target="_blank" rel="noopener noreferrer" href=mailto:<kaensert@outlook.dk?subject="HTML link">kaensert@outlook.dk</a>';
+                    echo ' <a target="_blank" rel="noopener noreferrer" href=mailto:kaensert@outlook.dk?subject="HTML link">kaensert@outlook.dk</a>';
                     ?>
                 
                 <h6>CVR: 33923716</h6>

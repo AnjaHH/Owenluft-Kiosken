@@ -552,6 +552,22 @@ li {
   }
 
 
+  .button.alt, .widget-area .widget a.button.alt {
+    border-radius: 3px;
+    width: 100%;
+}
+
+
+.quantity .qty {
+    
+    margin-bottom: 20px;
+}
+
+.hentry .entry-content a.button, .hentry .entry-content a.components-button:not(.is-link), .hentry .entry-content a.wp-block-button__link {
+    border-radius: 3px;
+    width: 100%;
+}
+
 
 
 .woocommerce div.product form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce div.product form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label, .woocommerce.archive form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce.archive form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label, .woocommerce.single-product form.cart.variations_form .tawcvs-swatches .swatch.swatch-label, .woocommerce.single-product form.cart.variations_form .tawcvs-swatches .swatch-show-more.swatch-label {
